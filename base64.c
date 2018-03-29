@@ -53,7 +53,7 @@ unsigned int b64d_size(unsigned int in_size) {
 	return ((3*in_size)/4);
 }
 
-unsigned int b64_encode(const unsigned int* in, unsigned int in_len, unsigned char* out) {
+unsigned int b64_encode(const unsigned char* in, unsigned int in_len, char* out) {
 
 	unsigned int i=0, j=0, k=0, s[3];
 	
